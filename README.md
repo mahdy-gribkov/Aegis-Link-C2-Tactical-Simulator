@@ -1,3 +1,18 @@
+<div align="center">
+
+# Aegis-Link C2 Tactical Simulator
+
+C2 Tactical Simulator built with .NET 6 WPF, featuring hardware integration with M5Stack CardPuter (ESP32-S3).
+
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
+![.NET 6](https://img.shields.io/badge/.NET_6-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![WPF](https://img.shields.io/badge/WPF-0078D4?style=for-the-badge&logo=windows&logoColor=white)
+![ESP32](https://img.shields.io/badge/ESP32--S3-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
+
+</div>
+
+---
+
 # Aegis-Link C2 v3.0.0
 
 ```
@@ -9,10 +24,6 @@
    ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝╚══════╝    ╚══════╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
                     TACTICAL C2 CONSOLE | v3.0.0
 ```
-
-**Classification:** UNCLASSIFIED // PUBLIC RELEASE  
-**Lead Systems Architect:** Mahdy Gribkov
-
 ---
 
 ## Getting Started
@@ -95,17 +106,6 @@ graph TB
 
 ---
 
-## Troubleshooting
-
-### UDP Port Blocked
-```powershell
-# Check if port 5555 is in use
-netstat -an | findstr 5555
-
-# Open Windows Firewall
-New-NetFirewallRule -DisplayName "AegisLink UDP" -Direction Inbound -Protocol UDP -LocalPort 5555 -Action Allow
-```
-
 ### v3.0.0 Feature Highlights
 - **Radar Navigation**: Zoom (Mouse Wheel) and Pan (Click & Drag) the tactical map.
 - **Persistence**: Monitors window position, size, and screen placement across restarts.
@@ -123,24 +123,6 @@ New-NetFirewallRule -DisplayName "AegisLink UDP" -Direction Inbound -Protocol UD
 ```powershell
 dotnet build AegisLink.sln -c Release
 ```
-
-### Application Won't Start
-1. Check `%LOCALAPPDATA%\AegisLink\logs\crash.log`
-2. Run `.\build_release.ps1` to ensure a clean build environment
-
----
-
-## Version History
-
-| Version | Status | Description |
-|---------|--------|-------------|
-| **3.0.0** | **CURRENT** | Flagship refactor: DI, CommunityToolkit.Mvvm, Glass Cockpit |
-| 2.1.0 | Stable | Active radar/graph animation |
-| 2.0.2 | Stable | XAML event compatibility fix |
-| 1.6.0 | Superseded | Flagship UI overhaul |
-
----
-
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.

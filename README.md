@@ -2,6 +2,8 @@
 
 # Aegis-Link C2 Tactical Simulator
 
+Built by **Mahdy Lorens Gribkov** (מהדי לורנס גריבקוב) | [mahdygribkov.com](https://mahdygribkov.com) | [SporeSec](https://sporesec.com/en/mahdy-lorens-gribkov)
+
 C2 Tactical Simulator built with .NET 6 WPF, featuring hardware integration with M5Stack CardPuter (ESP32-S3).
 
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
